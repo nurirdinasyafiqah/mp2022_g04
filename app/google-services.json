@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "522773374488",
+    "project_id": "right-inn---hotel-booking-app",
+    "storage_bucket": "right-inn---hotel-booking-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522773374488:android:3c22880810dd3bbc96856d",
+        "android_client_info": {
+          "package_name": "com.example.mp2022group4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522773374488-b0h4clfco0avq43lhgsvmssj42c32gk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD3uEOwsrzdzd9Pgs_rBHVtlIZ04jaj6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522773374488-b0h4clfco0avq43lhgsvmssj42c32gk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
