@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
