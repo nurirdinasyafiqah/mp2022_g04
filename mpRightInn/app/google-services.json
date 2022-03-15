@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "434629763027",
+    "project_id": "hotel-booking-app-e4e3b",
+    "storage_bucket": "hotel-booking-app-e4e3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434629763027:android:c6aee9d4b8d56055b29926",
+        "android_client_info": {
+          "package_name": "com.example.mprightinn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434629763027-f0i661rtr2ebmheu5emhpej13phb2u4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9P0r1ylS1dFOXS3XUSMlNocddJobQHPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434629763027-f0i661rtr2ebmheu5emhpej13phb2u4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
