@@ -112,5 +112,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.529"
-        app:srcCompat="@mipmap/Icon" />
+        app:srcCompat="@mipmap/icon" />
 </androidx.constraintlayout.widget.ConstraintLayout>
