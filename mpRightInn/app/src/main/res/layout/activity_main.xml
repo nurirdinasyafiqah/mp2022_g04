@@ -4,35 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#08172E"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:hint="Email "
         android:inputType="textPersonName"
+        android:textColor="#D9B59D"
+        android:textColorHighlight="#D9B59D"
+        android:textColorHint="#D9B59D"
+        android:textColorLink="#D9B59D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="281dp"
+        android:layout_height="57dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="#D9B59D"
+        android:textColorHighlight="#D9B59D"
+        android:textColorHint="#D9B59D"
+        android:textColorLink="#D9B59D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <Button
         android:id="@+id/button"
@@ -52,17 +61,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="No. of attempts remaining: "
+        android:textColor="#D9B59D"
+        android:textColorHighlight="#D9B59D"
+        android:textColorHint="#D9B59D"
+        android:textColorLink="#D9B59D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.116" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New user? Sign up"
+        android:textColor="#D9B59D"
+        android:textColorHighlight="#D9B59D"
+        android:textColorHint="#D9B59D"
+        android:textColorLink="#D9B59D"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,9 +93,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
+        android:textColor="#D9B59D"
+        android:textColorHighlight="#D9B59D"
+        android:textColorHint="#D9B59D"
+        android:textColorLink="#D9B59D"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button"
-        app:layout_constraintVertical_bias="0.739" />
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="266dp"
+        android:layout_height="263dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@mipmap/Icon" />
 </androidx.constraintlayout.widget.ConstraintLayout>
