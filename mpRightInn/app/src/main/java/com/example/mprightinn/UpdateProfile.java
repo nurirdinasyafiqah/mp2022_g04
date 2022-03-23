@@ -48,8 +48,9 @@ public class UpdateProfile extends AppCompatActivity {
 
                 UserProfile userProfile = snapshot.getValue(UserProfile.class);
                 newUsername.setText(userProfile.getUserName());
-                newUserAge.setText(userProfile.getUserAge());
                 newUserEmail.setText(userProfile.getUserEmail());
+                newUserAge.setText(userProfile.getUserAge());
+
             }
 
             @Override
@@ -63,10 +64,11 @@ public class UpdateProfile extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 String name = newUsername.getText().toString();
-                String age = newUserAge.getText().toString();
                 String email = newUserEmail.getText().toString();
+                String age = newUserAge.getText().toString();
 
-                UserProfile userProfile = new UserProfile(age, email, name);
+
+                UserProfile userProfile = new UserProfile(name, email, age);
 
                 databaseReference.setValue(userProfile);
 
