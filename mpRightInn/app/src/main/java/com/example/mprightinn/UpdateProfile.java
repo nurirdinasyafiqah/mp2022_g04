@@ -3,14 +3,11 @@ package com.example.mprightinn;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.icu.lang.UScript;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,65 +17,65 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.net.HttpCookie;
+public class UpdateProfile extends AppCompatActivity {
 
-public class ProfileActivity extends AppCompatActivity {
-
-    private ImageView profilePic;
-    private TextView profileName, profileAge, profileEmail;
-    private Button profileUpdate, changePassword;
+    private EditText newUsername, newUserEmail, newUserAge;
+    private Button save;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_update_profile);
 
-        profilePic = findViewById(R.id.ivProfilePic);
-        profileName = findViewById(R.id.tvProfileName);
-        profileAge = findViewById(R.id.tvProfileAge);
-        profileEmail = findViewById(R.id.tvProfileEmail);
-        profileUpdate = findViewById(R.id.btnProfileUpdate);
-        changePassword = findViewById(R.id.btnChangePassword);
+
+        newUsername = findViewById(R.id.etNameUpdate);
+        newUserEmail = findViewById(R.id.etEmailUpdate);
+        newUserAge = findViewById(R.id.etAgeUpdate);
+        save = findViewById(R.id.btnSave);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
-        DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
+        final DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 UserProfile userProfile = snapshot.getValue(UserProfile.class);
-                profileName.setText("Name: " + userProfile.getUserName());
-                profileAge.setText("Age: " + userProfile.getUserAge());
-                profileEmail.setText("Email: " + userProfile.getUserEmail());
+                newUsername.setText(userProfile.getUserName());
+                newUserAge.setText(userProfile.getUserAge());
+                newUserEmail.setText(userProfile.getUserEmail());
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
-                Toast.makeText(ProfileActivity.this, error.getCode(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpdateProfile.this, error.getCode(), Toast.LENGTH_SHORT).show();
             }
         });
 
-        profileUpdate.setOnClickListener(new View.OnClickListener(){
+        save.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                startActivity(new Intent(ProfileActivity.this, UpdateProfile.class));
+                String name = newUsername.getText().toString();
+                String age = newUserAge.getText().toString();
+                String email = newUserEmail.getText().toString();
+
+                UserProfile userProfile = new UserProfile(age, email, name);
+
+                databaseReference.setValue(userProfile);
+
+                finish();
+
             }
         });
 
-        changePassword.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                startActivity(new Intent(ProfileActivity.this, UpdatePassword.class));
-            }
-        });
+
     }
 
     @Override
