@@ -25,6 +25,8 @@ public class PasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
 
+        getSupportActionBar().hide();
+
         passwordEmail = (EditText)findViewById(R.id.etPasswordEmail);
         resetPassword = (Button)findViewById(R.id.btnPasswordReset);
         firebaseAuth = FirebaseAuth.getInstance();
