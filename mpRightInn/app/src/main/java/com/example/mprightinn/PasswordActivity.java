@@ -1,5 +1,7 @@
 package com.example.mprightinn;
 
+// FORGOT PASSWORD
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 

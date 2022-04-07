@@ -23,24 +23,7 @@
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
-
-    <TextView
-        android:id="@+id/tvProfileEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email:"
-        android:textColor="#D9B59D"
-        android:textColorHighlight="#D9B59D"
-        android:textColorHint="#D9B59D"
-        android:textColorLink="#D9B59D"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvProfileName"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.419" />
 
     <TextView
         android:id="@+id/tvProfileAge"
@@ -57,12 +40,29 @@
         app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvProfileEmail"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/tvProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="#D9B59D"
+        android:textColorHighlight="#D9B59D"
+        android:textColorHint="#D9B59D"
+        android:textColorLink="#D9B59D"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileName"
+        app:layout_constraintVertical_bias="0.042" />
 
     <Button
         android:id="@+id/btnProfileUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="77dp"
+        android:layout_height="41dp"
         android:text="Edit"
         android:textColor="#08172E"
         android:textColorHighlight="#08172E"
@@ -78,8 +78,8 @@
 
     <Button
         android:id="@+id/btnChangePassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
         android:text="Changed Password"
         android:textColor="#08172E"
         android:textColorHighlight="#08172E"
@@ -94,13 +94,12 @@
 
     <ImageView
         android:id="@+id/ivProfilePic"
-        android:layout_width="168dp"
-        android:layout_height="173dp"
+        android:layout_width="141dp"
+        android:layout_height="126dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.097"
+        app:layout_constraintVertical_bias="0.166"
         app:srcCompat="@drawable/camera_icon" />
 </androidx.constraintlayout.widget.ConstraintLayout>

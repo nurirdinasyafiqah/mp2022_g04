@@ -9,26 +9,68 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="274dp"
-        android:layout_height="51dp"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
         android:ems="10"
-        android:hint="Email "
+        android:hint="Email address"
         android:inputType="textPersonName"
         android:textColor="#D9B59D"
         android:textColorHighlight="#D9B59D"
         android:textColorHint="#D9B59D"
         android:textColorLink="#D9B59D"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952" />
+        app:layout_constraintVertical_bias="0.95" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/email_icon" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="197dp"
+        android:layout_height="33dp"
+        android:text="Forgot Password?"
+        android:textColor="#D9B59D"
+        android:textColorHighlight="#D9B59D"
+        android:textColorHint="#D9B59D"
+        android:textColorLink="#D9B59D"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535"
+        app:srcCompat="@drawable/password_icon" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="273dp"
-        android:layout_height="52dp"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -36,12 +78,13 @@
         android:textColorHighlight="#D9B59D"
         android:textColorHint="#D9B59D"
         android:textColorLink="#D9B59D"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.538" />
 
     <Button
         android:id="@+id/button"
@@ -72,7 +115,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintVertical_bias="0.299" />
 
     <TextView
         android:id="@+id/textView3"
@@ -89,47 +132,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.166" />
-
-    <TextView
-        android:id="@+id/tvForgotPassword"
-        android:layout_width="197dp"
-        android:layout_height="33dp"
-        android:text="Forgot Password?"
-        android:textColor="#D9B59D"
-        android:textColorHighlight="#D9B59D"
-        android:textColorHint="#D9B59D"
-        android:textColorLink="#D9B59D"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.26" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="38dp"
-        android:layout_height="51dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542"
-        app:srcCompat="@drawable/password_icon" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="38dp"
-        android:layout_height="51dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444"
-        app:srcCompat="@drawable/email_icon" />
 
     <ImageView
         android:id="@+id/imageView6"
