@@ -16,10 +16,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
 
 public class UpdateProfile extends AppCompatActivity {
 
-    private EditText newUsername, newUserEmail, newUserAge;
+    private EditText newUserName, newUserEmail, newUserAge;
     private Button save;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
@@ -31,7 +32,7 @@ public class UpdateProfile extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        newUsername = findViewById(R.id.etNameUpdate);
+        newUserName = findViewById(R.id.etNameUpdate);
         newUserEmail = findViewById(R.id.etEmailUpdate);
         newUserAge = findViewById(R.id.etAgeUpdate);
         save = findViewById(R.id.btnSave);
@@ -41,35 +42,33 @@ public class UpdateProfile extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
-        final DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
+        final DatabaseReference databaseReference = firebaseDatabase.getReference("User Detail").child(firebaseAuth.getUid());
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-
                 UserProfile userProfile = snapshot.getValue(UserProfile.class);
-                newUsername.setText(userProfile.getUserName());
+                newUserName.setText(userProfile.getUserName());
                 newUserEmail.setText(userProfile.getUserEmail());
                 newUserAge.setText(userProfile.getUserAge());
 
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-                Toast.makeText(UpdateProfile.this, error.getCode(), Toast.LENGTH_SHORT).show();
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(UpdateProfile.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
             }
         });
 
         save.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                String name = newUsername.getText().toString();
+                String name = newUserName.getText().toString();
                 String email = newUserEmail.getText().toString();
                 String age = newUserAge.getText().toString();
 
 
-                UserProfile userProfile = new UserProfile(name, email, age);
+                UserProfile userProfile = new UserProfile(name, age, email);
 
                 databaseReference.setValue(userProfile);
 

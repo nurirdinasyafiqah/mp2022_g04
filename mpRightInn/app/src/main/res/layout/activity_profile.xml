@@ -62,7 +62,7 @@
     <Button
         android:id="@+id/btnProfileUpdate"
         android:layout_width="77dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:text="Edit"
         android:textColor="#08172E"
         android:textColorHighlight="#08172E"

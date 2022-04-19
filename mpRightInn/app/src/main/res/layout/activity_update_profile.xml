@@ -7,22 +7,10 @@
     android:background="#08172E"
     tools:context=".UpdateProfile">
 
-    <ImageView
-        android:id="@+id/ivProfileUpdate"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"
-        app:srcCompat="@mipmap/ic_launcher" />
-
     <EditText
         android:id="@+id/etNameUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="265dp"
+        android:layout_height="64dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -34,13 +22,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivProfileUpdate"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
 
     <EditText
         android:id="@+id/etEmailUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="261dp"
+        android:layout_height="65dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -57,8 +45,8 @@
 
     <EditText
         android:id="@+id/etAgeUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="257dp"
+        android:layout_height="64dp"
         android:ems="10"
         android:hint="Age"
         android:inputType="number"
@@ -86,4 +74,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAgeUpdate"
         app:layout_constraintVertical_bias="0.276" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="116dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toTopOf="@+id/etNameUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695"
+        app:srcCompat="@drawable/camera_icon" />
 </androidx.constraintlayout.widget.ConstraintLayout>
