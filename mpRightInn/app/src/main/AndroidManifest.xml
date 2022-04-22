@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MpRightInn">
         <activity
+            android:name=".ConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Booking"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
