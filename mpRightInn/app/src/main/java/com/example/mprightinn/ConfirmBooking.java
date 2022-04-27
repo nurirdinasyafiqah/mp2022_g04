@@ -7,14 +7,18 @@ public class ConfirmBooking {
     public String roomType;
     public String date;
     public String totalPrice;
+    public String duration;
+    public String numberRoom;
 
-    public ConfirmBooking(String name, String phoneNo, String totalGuest, String roomType, String date, String totalPrice) {
+    public ConfirmBooking(String name, String phoneNo, String totalGuest, String roomType, String date, String totalPrice, String duration, String numberRoom) {
         this.name = name;
         this.phoneNo = phoneNo;
         this.totalGuest = totalGuest;
         this.roomType = roomType;
         this.date = date;
         this.totalPrice = totalPrice;
+        this.duration = duration;
+        this.numberRoom = numberRoom;
     }
 
     public ConfirmBooking() {
@@ -44,6 +48,14 @@ public class ConfirmBooking {
         return totalPrice;
     }
 
+    public String getDuration() {
+        return duration;
+    }
+
+    public String getNumberRoom() {
+        return numberRoom;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -66,5 +78,13 @@ public class ConfirmBooking {
 
     public void setTotalPrice(String totalPrice) {
         this.totalPrice = totalPrice;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public void setNumberRoom(String numberRoom) {
+        this.numberRoom = numberRoom;
     }
 }

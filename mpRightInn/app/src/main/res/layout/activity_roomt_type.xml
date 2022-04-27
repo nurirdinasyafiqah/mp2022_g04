@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/action_settings"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RoomtType">
+
+        <View
+            android:id="@+id/v_king"
+            android:layout_width="411dp"
+            android:layout_height="328dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_queen" />
+
+        <View
+            android:id="@+id/v_connecting"
+            android:layout_width="411dp"
+            android:layout_height="328dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_king" />
+
+        <View
+            android:id="@+id/v_studio"
+            android:layout_width="411dp"
+            android:layout_height="328dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_connecting" />
+
+        <View
+            android:id="@+id/v_master"
+            android:layout_width="411dp"
+            android:layout_height="328dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_studio" />
+
+        <View
+            android:id="@+id/v_double"
+            android:layout_width="411dp"
+            android:layout_height="328dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_Single" />
+
+        <View
+            android:id="@+id/v_triple"
+            android:layout_width="411dp"
+            android:layout_height="328dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_double" />
+
+        <View
+            android:id="@+id/v_queen"
+            android:layout_width="411dp"
+            android:layout_height="328dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_triple" />
+
+        <View
+            android:id="@+id/v_Single"
+            android:layout_width="411dp"
+            android:layout_height="328dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_single"
+            android:layout_width="380dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/v_Single"
+            app:srcCompat="@drawable/single_room" />
+
+        <TextView
+            android:id="@+id/tv_single1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Single Room"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/v_Single"
+            app:layout_constraintTop_toBottomOf="@+id/iv_single" />
+
+        <TextView
+            android:id="@+id/tv_single2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description: A room assigned to one person."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_single1" />
+
+        <TextView
+            android:id="@+id/tv_single3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Price: RM120 per Night"
+            app:layout_constraintEnd_toEndOf="@+id/tv_single2"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/tv_single2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_single2" />
+
+        <Button
+            android:id="@+id/btn_single"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Book Now"
+            app:layout_constraintBottom_toBottomOf="@+id/v_Single"
+            app:layout_constraintEnd_toEndOf="@+id/tv_single3"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/tv_single3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_single3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/iv_double"
+            android:layout_width="380dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="@+id/v_double"
+            app:layout_constraintTop_toTopOf="@+id/v_double"
+            app:srcCompat="@drawable/double_room" />
+
+        <TextView
+            android:id="@+id/tv_double1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Double Room"
+            app:layout_constraintEnd_toEndOf="@+id/iv_double"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/iv_double"
+            app:layout_constraintTop_toBottomOf="@+id/iv_double" />
+
+        <TextView
+            android:id="@+id/tv_double2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description: A room assigned to two people."
+            app:layout_constraintEnd_toEndOf="@+id/tv_double1"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/tv_double1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_double1" />
+
+        <TextView
+            android:id="@+id/tv_double3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Price: RM240 per Night"
+            app:layout_constraintEnd_toEndOf="@+id/tv_double2"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/tv_double2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_double2" />
+
+        <Button
+            android:id="@+id/btn_double"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:text="Book Now"
+            app:layout_constraintEnd_toEndOf="@+id/tv_double3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_double3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_double3" />
+
+        <ImageView
+            android:id="@+id/iv_triple"
+            android:layout_width="380dp"
+            android:layout_height="170dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="@+id/v_triple"
+            app:layout_constraintTop_toTopOf="@+id/v_triple"
+            app:srcCompat="@drawable/triple_room" />
+
+        <TextView
+            android:id="@+id/tv_triple1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Triple Room"
+            app:layout_constraintEnd_toEndOf="@+id/iv_triple"
+            app:layout_constraintStart_toStartOf="@+id/iv_triple"
+            app:layout_constraintTop_toBottomOf="@+id/iv_triple" />
+
+        <TextView
+            android:id="@+id/tv_triple2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description: A room assigned to three people"
+            app:layout_constraintEnd_toEndOf="@+id/tv_triple1"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/tv_triple1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_triple1" />
+
+        <TextView
+            android:id="@+id/tv_triple3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Price: RM360 per Night"
+            app:layout_constraintEnd_toEndOf="@+id/tv_triple2"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="@+id/tv_triple2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_triple2" />
+
+        <Button
+            android:id="@+id/btn_triple"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Book Now"
+            app:layout_constraintEnd_toEndOf="@+id/tv_triple3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_triple3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_triple3" />
+
+        <ImageView
+            android:id="@+id/iv_queen"
+            android:layout_width="380dp"
+            android:layout_height="170dp"
+            app:layout_constraintEnd_toEndOf="@+id/v_queen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/v_queen"
+            app:srcCompat="@drawable/queen_room" />
+
+        <TextView
+            android:id="@+id/tv_queen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Queen Room"
+            app:layout_constraintEnd_toEndOf="@+id/iv_queen"
+            app:layout_constraintStart_toStartOf="@+id/iv_queen"
+            app:layout_constraintTop_toBottomOf="@+id/iv_queen" />
+
+        <TextView
+            android:id="@+id/tv_queen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Descriptiom: A room with a queen-sized bed"
+            app:layout_constraintEnd_toEndOf="@+id/tv_queen1"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/tv_queen1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_queen1" />
+
+        <TextView
+            android:id="@+id/tv_queen3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Price: RM350 per Night"
+            app:layout_constraintEnd_toEndOf="@+id/tv_queen2"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/tv_queen2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_queen2" />
+
+        <Button
+            android:id="@+id/btn_queen"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Book Now"
+            app:layout_constraintEnd_toEndOf="@+id/tv_queen3"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/tv_queen3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_queen3" />
+
+        <ImageView
+            android:id="@+id/iv_king"
+            android:layout_width="380dp"
+            android:layout_height="170dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/v_king"
+            app:srcCompat="@drawable/king_room" />
+
+        <TextView
+            android:id="@+id/tv_king1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="King Room"
+            app:layout_constraintEnd_toEndOf="@+id/iv_king"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/iv_king"
+            app:layout_constraintTop_toBottomOf="@+id/iv_king" />
+
+        <TextView
+            android:id="@+id/tv_king2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description: A room with king-sized bed."
+            app:layout_constraintEnd_toEndOf="@+id/tv_king1"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/tv_king1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_king1" />
+
+        <TextView
+            android:id="@+id/tv_king3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Price: RM400 per Night"
+            app:layout_constraintEnd_toEndOf="@+id/tv_king2"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/tv_king2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_king2" />
+
+        <Button
+            android:id="@+id/btn_king"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:text="Book Now"
+            app:layout_constraintEnd_toEndOf="@+id/tv_king3"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/tv_king3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_king3" />
+
+        <ImageView
+            android:id="@+id/iv_connecting"
+            android:layout_width="380dp"
+            android:layout_height="170dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/v_connecting"
+            app:srcCompat="@drawable/connecting_room" />
+
+        <TextView
+            android:id="@+id/tv_connecting1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Connecting Room"
+            app:layout_constraintEnd_toEndOf="@+id/iv_connecting"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="@+id/iv_connecting"
+            app:layout_constraintTop_toBottomOf="@+id/iv_connecting" />
+
+        <TextView
+            android:id="@+id/tv_connecting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description:  Rooms with individual entrance doors from the outside and a connecting door between."
+            app:layout_constraintEnd_toEndOf="@+id/tv_connecting1"
+            app:layout_constraintStart_toStartOf="@+id/tv_connecting1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_connecting1" />
+
+        <TextView
+            android:id="@+id/tv_connecting3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Price: RM440 per Night"
+            app:layout_constraintEnd_toEndOf="@+id/tv_connecting2"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/tv_connecting2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_connecting2" />
+
+        <Button
+            android:id="@+id/btn_connecting"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Book Now"
+            app:layout_constraintEnd_toEndOf="@+id/tv_connecting3"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="@+id/tv_connecting3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_connecting3" />
+
+        <ImageView
+            android:id="@+id/iv_studio"
+            android:layout_width="380dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/v_studio"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_connecting"
+            app:srcCompat="@drawable/studio_room" />
+
+        <TextView
+            android:id="@+id/tv_studio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Studio Room"
+            app:layout_constraintEnd_toEndOf="@+id/iv_studio"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/iv_studio"
+            app:layout_constraintTop_toBottomOf="@+id/iv_studio" />
+
+        <TextView
+            android:id="@+id/tv_studio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Description: A room with a studio bed – a couch that can be converted into a bed."
+            app:layout_constraintEnd_toEndOf="@+id/tv_studio1"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/tv_studio1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_studio1" />
+
+        <TextView
+            android:id="@+id/tv_studio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Price: RM600 per Day"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_studio2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_studio2" />
+
+        <Button
+            android:id="@+id/btn_studio"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:text="Book Now"
+            app:layout_constraintEnd_toEndOf="@+id/tv_studio3"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/tv_studio3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_studio3" />
+
+        <ImageView
+            android:id="@+id/iv_master"
+            android:layout_width="380dp"
+            android:layout_height="170dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/v_master"
+            app:layout_constraintTop_toTopOf="@+id/v_master"
+            app:srcCompat="@drawable/master_suites_room" />
+
+        <TextView
+            android:id="@+id/tv_master1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Master Suite Room"
+            app:layout_constraintEnd_toEndOf="@+id/iv_master"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/iv_master"
+            app:layout_constraintTop_toBottomOf="@+id/iv_master" />
+
+        <TextView
+            android:id="@+id/tv_master2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description: A parlour or living room connected to one or more bedrooms."
+            app:layout_constraintEnd_toEndOf="@+id/tv_master1"
+            app:layout_constraintStart_toStartOf="@+id/tv_master1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_master1" />
+
+        <TextView
+            android:id="@+id/tv_master3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Price: RM2000 per Day"
+            app:layout_constraintEnd_toEndOf="@+id/tv_master2"
+            app:layout_constraintStart_toStartOf="@+id/tv_master2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_master2" />
+
+        <Button
+            android:id="@+id/btn_master"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:text="Book Now"
+            app:layout_constraintEnd_toEndOf="@+id/tv_master3"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/tv_master3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_master3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

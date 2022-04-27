@@ -47,14 +47,13 @@
         android:id="@+id/btnRoomType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Room Type"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toEndOf="@+id/btnBookRoom"
         app:layout_constraintTop_toBottomOf="@+id/ivRoomType"
-        app:layout_constraintVertical_bias="0.034"
-        tools:text="Room Type" />
+        app:layout_constraintVertical_bias="0.034" />
 
     <ImageView
         android:id="@+id/ivOrderHistory"
@@ -69,10 +68,10 @@
         app:srcCompat="@drawable/order_history" />
 
     <Button
-        android:id="@+id/btnOrderHistory"
+        android:id="@+id/btnFeedback"
         android:layout_width="129dp"
         android:layout_height="53dp"
-        android:text="Order History"
+        android:text="Feedback"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.113"
@@ -100,7 +99,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.745"
-        app:layout_constraintStart_toEndOf="@+id/btnOrderHistory"
+        app:layout_constraintStart_toEndOf="@+id/btnFeedback"
         app:layout_constraintTop_toBottomOf="@+id/ivReceipt"
         app:layout_constraintVertical_bias="0.064" />
 
@@ -112,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOrderHistory"
+        app:layout_constraintTop_toBottomOf="@+id/btnFeedback"
         app:layout_constraintVertical_bias="0.115"
         app:srcCompat="@drawable/notification" />
 

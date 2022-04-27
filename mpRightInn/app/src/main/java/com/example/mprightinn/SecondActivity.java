@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SecondActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
-    private Button logout, BookRoom;
+    private Button logout, BookRoom, RoomType, Receipt, Feedback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,9 @@ public class SecondActivity extends AppCompatActivity {
 
         logout = (Button) findViewById(R.id.btnLogout);
         BookRoom = (Button) findViewById(R.id.btnBookRoom);
+        RoomType = (Button) findViewById(R.id.btnRoomType);
+        Receipt = findViewById(R.id.btnReceipt);
+        Feedback = findViewById(R.id.btnFeedback);
 
 
         BookRoom.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +43,24 @@ public class SecondActivity extends AppCompatActivity {
                 Logout();
             }
         });
+        RoomType.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RoomType();
+            }
+        });
+        Receipt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SecondActivity.this, Receipt.class));
+            }
+        });
+        Feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SecondActivity.this, Feedback.class));
+            }
+        });
     }
 
     private void Logout(){
@@ -50,6 +71,9 @@ public class SecondActivity extends AppCompatActivity {
 
     public void BookRoom (){
         startActivity(new Intent(SecondActivity.this, Booking.class));
+    }
+    public void RoomType (){
+        startActivity(new Intent(SecondActivity.this, RoomtType.class));
     }
 
     @Override

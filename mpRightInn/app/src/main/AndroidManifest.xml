@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mprightinn">
+    package="com.example.mprightinn" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,7 +10,19 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_app_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MpRightInn">
+        android:theme="@style/Theme.MpRightInn" >
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Calender"
+            android:exported="false" />
+        <activity
+            android:name=".Receipt"
+            android:exported="false" />
+        <activity
+            android:name=".RoomtType"
+            android:exported="false" />
         <activity
             android:name=".ConfirmActivity"
             android:exported="false" />
@@ -20,7 +32,7 @@
         <activity
             android:name=".SplashScreen"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,7 +59,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

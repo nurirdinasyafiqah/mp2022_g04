@@ -14,9 +14,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class ConfirmActivity extends AppCompatActivity {
-    TextView Name, PhoneNo, TotalGuest, RoomType, Date, TotalPrice;
+    TextView Name, PhoneNo, TotalGuest, RoomType, Date, TotalPrice, Duration, NumberRoom;
     Button Confirm;
-    String iName, iPhoneNo, iTotalGuest, iRoomType, iDate, iTotalPrice;
+    String iName, iPhoneNo, iTotalGuest, iRoomType, iDate, iTotalPrice, iDuration, iNumberRoom;
+    Double dTotalPrice;
+    int nnumberroom, nduration;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
 
@@ -34,27 +36,33 @@ public class ConfirmActivity extends AppCompatActivity {
         Date = findViewById(R.id.tvDate1);
         TotalPrice = findViewById(R.id.tvTotalPrice);
         Confirm = findViewById(R.id.btnConfirm);
+        Duration = findViewById(R.id.tv_duration);
+        NumberRoom = findViewById(R.id.tvNumberRoom);
 
-         iName = getIntent().getStringExtra("keyName");
-         iPhoneNo = getIntent().getStringExtra("keyPhoneNo");
-         iTotalGuest = getIntent().getStringExtra("keyTotalGuest");
-         iRoomType = getIntent().getStringExtra("keyRoomType");
-         iDate = getIntent().getStringExtra("keyDate");
+        iName = getIntent().getStringExtra("keyname");
+        iPhoneNo = getIntent().getStringExtra("keyphoneno");
+        iTotalGuest = getIntent().getStringExtra("keytotalguest");
+        iRoomType = getIntent().getStringExtra("keyroomtype");
+        iDate = getIntent().getStringExtra("keydate");
+        iDuration = getIntent().getStringExtra("keyduration");
+        iNumberRoom = getIntent().getStringExtra("keynumberroom");
 
         Name.setText(iName);
         PhoneNo.setText(iPhoneNo);
         TotalGuest.setText(iTotalGuest);
         RoomType.setText(iRoomType);
         Date.setText(iDate);
+        Duration.setText(iDuration);
+        NumberRoom.setText(iNumberRoom);
 
-        calculateRoomPrice(iRoomType);
+        calculateRoomPrice();
         TotalPrice.setText(iTotalPrice);
 
         Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 DatabaseReference databaseReference = firebaseDatabase.getReference("Booking Detail").child(firebaseAuth.getUid());
-                ConfirmBooking confirmBooking = new ConfirmBooking(iName, iPhoneNo, iTotalGuest, iRoomType, iDate, iTotalPrice);
+                ConfirmBooking confirmBooking = new ConfirmBooking(iName, iPhoneNo, iTotalGuest, iRoomType, iDate, iTotalPrice, iDuration, iNumberRoom);
                 databaseReference.setValue(confirmBooking);
                 Toast.makeText(ConfirmActivity.this, "Booking Successful", Toast.LENGTH_SHORT).show();
                 finish();
@@ -64,15 +72,30 @@ public class ConfirmActivity extends AppCompatActivity {
     }
 
 
-    public void calculateRoomPrice (String iRoomType){
-        this.iRoomType = iRoomType;
-        if (iRoomType.equals("SINGLE")){
-            iTotalPrice = "RM120";
-        }else if (iRoomType.equals("KING")) {
-            iTotalPrice = "RM220";
-        }else if (iRoomType.equals("PREMIUM")) {
-            iTotalPrice = "RM320";
+    public void calculateRoomPrice (){
+        nnumberroom = Integer.parseInt(iNumberRoom);
+        nduration = Integer.parseInt(iDuration);
+
+
+        if (iRoomType.equals("Single Room")){
+            dTotalPrice = (nnumberroom*120.00)*nduration;
+        }else if (iRoomType.equals("Double Room")) {
+            dTotalPrice = (nnumberroom*240.00)*nduration;
+        }else if (iRoomType.equals("Triple Room")) {
+            dTotalPrice = (nnumberroom*360.00)*nduration;
+        }else if (iRoomType.equals("Queen Room")) {
+            dTotalPrice = (nnumberroom*350.00)*nduration;
+        }else if (iRoomType.equals("King Room")) {
+            dTotalPrice = (nnumberroom*400.00)*nduration;
+        }else if (iRoomType.equals("Connecting Room")) {
+            dTotalPrice = (nnumberroom*440.00)*nduration;
+        }else if (iRoomType.equals("Studio Room")) {
+            dTotalPrice = (nnumberroom*600.00)*nduration;
+        }else if (iRoomType.equals("Master Suite Room")) {
+            dTotalPrice = (nnumberroom*2000.00)*nduration;
         }
+
+        iTotalPrice = String.format("%.2f", dTotalPrice);
 
     }
 }
