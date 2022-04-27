@@ -1,7 +1,11 @@
 package com.example.mprightinn;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -64,7 +68,8 @@ public class ConfirmActivity extends AppCompatActivity {
                 DatabaseReference databaseReference = firebaseDatabase.getReference("Booking Detail").child(firebaseAuth.getUid());
                 ConfirmBooking confirmBooking = new ConfirmBooking(iName, iPhoneNo, iTotalGuest, iRoomType, iDate, iTotalPrice, iDuration, iNumberRoom);
                 databaseReference.setValue(confirmBooking);
-                Toast.makeText(ConfirmActivity.this, "Booking Successful", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ConfirmActivity.this, "Booking Successful", Toast.LENGTH_SHORT).show();
+                addNotification();
                 finish();
                 startActivity(new Intent(ConfirmActivity.this, SecondActivity.class));
             }
@@ -96,6 +101,19 @@ public class ConfirmActivity extends AppCompatActivity {
         }
 
         iTotalPrice = String.format("%.2f", dTotalPrice);
+    }
 
+    private void addNotification(){
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
+                .setSmallIcon(android.R.drawable.star_on)
+                .setContentTitle("Right Inn - HOTEL BOOKING APP")
+                .setContentText("Your booking is confirmed!");
+
+        Intent notificationIntent = new Intent(this, Receipt.class);
+
+        PendingIntent contentIntent = PendingIntent.getActivity(this,0,notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(contentIntent);
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(0, builder.build());
     }
 }

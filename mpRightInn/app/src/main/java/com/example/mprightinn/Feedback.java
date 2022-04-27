@@ -3,10 +3,14 @@ package com.example.mprightinn;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -22,6 +26,7 @@ public class Feedback extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
+    Button sendFeedback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,7 @@ public class Feedback extends AppCompatActivity {
 
         tvFeedback = findViewById(R.id.tv_feedback);
         ratingBar = findViewById(R.id.Rbar);
+        sendFeedback = findViewById(R.id.btnSendFeedback);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -56,6 +62,14 @@ public class Feedback extends AppCompatActivity {
                 else if(v==5){
                     tvFeedback.setText("Very Satisfied");
                 }
+            }
+        });
+
+        sendFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Feedback.this, MainActivity.class));
+                Toast.makeText(Feedback.this, "Thank you for your feedback!", Toast.LENGTH_SHORT).show();
             }
         });
     }
