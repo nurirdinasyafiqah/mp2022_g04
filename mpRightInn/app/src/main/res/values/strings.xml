@@ -20,6 +20,19 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="receipt">Receipt</string>
+    <string name="contact_us">Contact US</string>
+    <string name="todo">TODO</string>
+    <string name="feedback">Feedback</string>
+    <string name="book_room">Book Room</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="notification">Notification</string>
+    <string name="logout">Logout</string>
+    <string name="todo">TODO</string>
+    <string name="room_type">Room Type</string>
     <string-array name="roomtype_array">
         <item>Single Room</item>
         <item>Double Room</item>

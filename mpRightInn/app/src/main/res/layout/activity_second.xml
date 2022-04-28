@@ -8,172 +8,162 @@
     android:background="#08172E"
     tools:context=".SecondActivity">
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@drawable/book_room" />
-
     <Button
         android:id="@+id/btnBookRoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Room"
+        android:layout_marginTop="8dp"
+        android:text="@string/book_room"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintEnd_toStartOf="@+id/btnRoomType"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.035" />
-
-    <ImageView
-        android:id="@+id/ivRoomType"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@drawable/room_type" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <Button
         android:id="@+id/btnRoomType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Room Type"
+        android:layout_marginEnd="44dp"
+        android:text="@string/room_type"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.729"
-        app:layout_constraintStart_toEndOf="@+id/btnBookRoom"
-        app:layout_constraintTop_toBottomOf="@+id/ivRoomType"
-        app:layout_constraintVertical_bias="0.034" />
-
-    <ImageView
-        android:id="@+id/ivOrderHistory"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBookRoom"
-        app:layout_constraintVertical_bias="0.06"
-        app:srcCompat="@drawable/order_history" />
+        tools:layout_editor_absoluteY="199dp" />
 
     <Button
         android:id="@+id/btnFeedback"
         android:layout_width="129dp"
         android:layout_height="53dp"
-        android:text="Feedback"
+        android:layout_marginStart="52dp"
+        android:text="@string/feedback"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintBottom_toTopOf="@+id/imageView15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivOrderHistory"
-        app:layout_constraintVertical_bias="0.068" />
-
-    <ImageView
-        android:id="@+id/ivReceipt"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.738"
-        app:layout_constraintStart_toEndOf="@+id/ivOrderHistory"
-        app:layout_constraintTop_toBottomOf="@+id/btnRoomType"
-        app:layout_constraintVertical_bias="0.06"
-        app:srcCompat="@drawable/receipt" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.421" />
 
     <Button
         android:id="@+id/btnReceipt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Receipt"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/receipt"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.745"
-        app:layout_constraintStart_toEndOf="@+id/btnFeedback"
-        app:layout_constraintTop_toBottomOf="@+id/ivReceipt"
-        app:layout_constraintVertical_bias="0.064" />
-
-    <ImageView
-        android:id="@+id/ivvNotification"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFeedback"
-        app:layout_constraintVertical_bias="0.115"
-        app:srcCompat="@drawable/notification" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnNotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Notification"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/notification"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivvNotification"
-        app:layout_constraintVertical_bias="0.16" />
-
-    <ImageView
-        android:id="@+id/ivContactUs"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
-        app:layout_constraintStart_toEndOf="@+id/ivvNotification"
-        app:layout_constraintTop_toBottomOf="@+id/btnReceipt"
-        app:layout_constraintVertical_bias="0.095"
-        app:srcCompat="@drawable/contact_us" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="0.04" />
 
     <Button
         android:id="@+id/btnContactUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact US"
+        android:layout_marginEnd="48dp"
+        android:text="@string/contact_us"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.766"
-        app:layout_constraintStart_toEndOf="@+id/btnNotification"
-        app:layout_constraintTop_toBottomOf="@+id/ivContactUs"
-        app:layout_constraintVertical_bias="0.21" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:layout_constraintVertical_bias="0.085" />
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="113dp"
         android:layout_height="48dp"
-        android:text="Logout"
+        android:text="@string/logout"
         app:backgroundTint="#9A3C3C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
+        app:layout_constraintVertical_bias="0.959" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="127dp"
+        android:layout_height="113dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127"
+        app:srcCompat="@drawable/booking_room"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="125dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRoomType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928"
+        app:srcCompat="@drawable/room_type1"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBookRoom"
+        app:srcCompat="@drawable/order_history1"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="133dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReceipt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoomType"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/receipt1"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="128dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/notification1"
+        tools:layout_editor_absoluteY="466dp"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="126dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/contact_us1"
+        tools:layout_editor_absoluteY="464dp"
+        android:contentDescription="@string/todo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
