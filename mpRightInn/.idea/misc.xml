@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_booking.xml" value="0.23369565217391305" />
+        <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_calender.xml" value="0.2617753623188406" />
+        <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_confirm.xml" value="0.2617753623188406" />
+        <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_feedback.xml" value="0.2617753623188406" />
         <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_main.xml" value="0.2726449275362319" />
         <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_password.xml" value="0.2726449275362319" />
         <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_profile.xml" value="0.2726449275362319" />
+        <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_receipt.xml" value="0.2617753623188406" />
         <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_registration.xml" value="0.2726449275362319" />
+        <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_roomt_type.xml" value="0.2617753623188406" />
         <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_second.xml" value="0.2726449275362319" />
+        <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_splash_screen.xml" value="0.2617753623188406" />
         <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_update_password.xml" value="0.2726449275362319" />
         <entry key="..\:/Afiq Personal/MP ANDROID STUDIO/Project MP/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_update_profile.xml" value="0.2726449275362319" />
         <entry key="..\:/MP PROJECT/MASTER PROJECT GROUP 4/mp2022_g04/mpRightInn/app/src/main/res/layout/activity_booking.xml" value="0.264" />
