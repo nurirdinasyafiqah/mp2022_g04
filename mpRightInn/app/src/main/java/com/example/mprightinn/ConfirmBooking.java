@@ -10,7 +10,8 @@ public class ConfirmBooking {
     public String duration;
     public String numberRoom;
 
-    public ConfirmBooking(String name, String phoneNo, String totalGuest, String roomType, String date, String totalPrice, String duration, String numberRoom) {
+    public ConfirmBooking(String name, String phoneNo, String totalGuest, String roomType,
+                          String date, String totalPrice, String duration, String numberRoom) {
         this.name = name;
         this.phoneNo = phoneNo;
         this.totalGuest = totalGuest;

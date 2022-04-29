@@ -8,7 +8,6 @@ public class UserProfile {
     public UserProfile(){
     }
 
-
     public UserProfile(String userName, String userAge, String userEmail) {
         this.userName = userName;
         this.userAge = userAge;

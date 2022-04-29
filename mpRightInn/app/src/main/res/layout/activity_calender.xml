@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.438" />
 
     <Button
         android:id="@+id/btnChooseDate"
@@ -29,21 +30,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date_picker"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintVertical_bias="0.288" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="179dp"
-        android:layout_height="50dp"
+        android:layout_width="178dp"
+        android:layout_height="60dp"
+        android:fontFamily="monospace"
         android:text="Date"
         android:textColor="#FFFFFF"
-        android:textSize="42sp"
+        android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/date_picker"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+        app:layout_constraintVertical_bias="0.864" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

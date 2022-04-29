@@ -76,7 +76,6 @@ public class ConfirmActivity extends AppCompatActivity {
         });
     }
 
-
     public void calculateRoomPrice (){
         nnumberroom = Integer.parseInt(iNumberRoom);
         nduration = Integer.parseInt(iDuration);
@@ -107,7 +106,7 @@ public class ConfirmActivity extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
                 .setSmallIcon(android.R.drawable.star_on)
                 .setContentTitle("Right Inn - HOTEL BOOKING APP")
-                .setContentText("Your booking is confirmed!");
+                .setContentText("Your hotel room booking is confirmed!");
 
         Intent notificationIntent = new Intent(this, Receipt.class);
 

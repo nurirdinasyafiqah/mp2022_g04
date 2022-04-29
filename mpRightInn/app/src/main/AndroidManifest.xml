@@ -16,7 +16,8 @@
             android:exported="false" />
         <activity
             android:name=".Calender"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".Receipt"
             android:exported="false" />
@@ -25,10 +26,12 @@
             android:exported="false" />
         <activity
             android:name=".ConfirmActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".Booking"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true"

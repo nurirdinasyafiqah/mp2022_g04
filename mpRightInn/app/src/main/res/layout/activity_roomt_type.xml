@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#BD9060"
+        android:background="#BEBD9060"
         tools:context=".RoomtType">
 
         <View
@@ -388,7 +388,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Description:  Rooms with individual entrance doors from the outside and a connecting door between."
+            android:text="Description:  Rooms with individual entrance doors from
+            the outside and a connecting door between."
             app:layout_constraintEnd_toEndOf="@+id/tv_connecting1"
             app:layout_constraintStart_toStartOf="@+id/tv_connecting1"
             app:layout_constraintTop_toBottomOf="@+id/tv_connecting1" />
@@ -442,7 +443,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Description: A room with a studio bed – a couch that can be converted into a bed."
+            android:text="Description: A room with a studio bed
+            – a couch that can be converted into a bed."
             app:layout_constraintEnd_toEndOf="@+id/tv_studio1"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="@+id/tv_studio1"
@@ -494,7 +496,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Description: A parlour or living room connected to one or more bedrooms."
+            android:text="Description: A parlour or living room connected to one
+             or more bedrooms."
             app:layout_constraintEnd_toEndOf="@+id/tv_master1"
             app:layout_constraintStart_toStartOf="@+id/tv_master1"
             app:layout_constraintTop_toBottomOf="@+id/tv_master1" />

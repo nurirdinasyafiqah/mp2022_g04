@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -78,9 +79,9 @@
 
     <Button
         android:id="@+id/btnChangePassword"
-        android:layout_width="199dp"
-        android:layout_height="48dp"
-        android:text="Changed Password"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:text="Change Password"
         android:textColor="#08172E"
         android:textColorHighlight="#08172E"
         android:textColorHint="#08172E"

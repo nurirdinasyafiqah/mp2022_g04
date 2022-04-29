@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ivBookRoom"
@@ -9,136 +10,228 @@
     tools:context=".SecondActivity">
 
     <Button
-        android:id="@+id/btnBookRoom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/book_room"
-        android:textColor="#08172E"
-        app:backgroundTint="#D9B59D"
-        app:layout_constraintEnd_toStartOf="@+id/btnRoomType"
-        app:layout_constraintHorizontal_bias="0.4"
+        android:id="@+id/btnLogout"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/logout"
+        app:backgroundTint="#9A3C3C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        app:srcCompat="@drawable/booking_room" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        app:srcCompat="@drawable/room_type1" />
 
     <Button
         android:id="@+id/btnRoomType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
         android:text="@string/room_type"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/btnBookRoom"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoomType"
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/receipt1" />
 
     <Button
         android:id="@+id/btnFeedback"
         android:layout_width="129dp"
         android:layout_height="53dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="20dp"
         android:text="@string/feedback"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.009" />
 
     <Button
         android:id="@+id/btnReceipt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="129dp"
+        android:layout_height="53dp"
         android:text="@string/receipt"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
-        app:layout_constraintBottom_toTopOf="@+id/imageView16"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toEndOf="@+id/btnFeedback"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBookRoom"
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/order_history1" />
 
     <Button
-        android:id="@+id/btnContactUs"
+        android:id="@+id/btnBookRoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="140dp"
-        android:text="@string/contact_us"
+        android:text="@string/book_room"
         android:textColor="#08172E"
         app:backgroundTint="#D9B59D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="113dp"
-        android:layout_height="48dp"
-        android:text="@string/logout"
-        app:backgroundTint="#9A3C3C"
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Contact Us"
+        android:textColor="#BA8E5F"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFeedback"
+        app:layout_constraintVertical_bias="0.093" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="127dp"
-        android:layout_height="113dp"
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number : "
+        android:textColor="#BA8E5F"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127"
-        app:srcCompat="@drawable/booking_room"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.042" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="125dp"
-        android:layout_height="115dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnRoomType"
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RightInn@gmail.com"
+        android:textColor="#D9B59D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928"
-        app:srcCompat="@drawable/room_type1"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.043" />
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="130dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/todo"
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(852) 3069 9688"
+        android:textColor="#D9B59D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address :"
+        android:textColor="#BA8E5F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBookRoom"
-        app:srcCompat="@drawable/order_history1" />
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.045" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="133dp"
-        android:layout_height="110dp"
-        android:layout_marginEnd="44dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/btnReceipt"
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textColor="#BA8E5F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRoomType"
-        app:layout_constraintVertical_bias="0.538"
-        app:srcCompat="@drawable/receipt1" />
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.043" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="126dp"
-        android:layout_height="114dp"
-        android:layout_marginEnd="140dp"
-        android:contentDescription="@string/todo"
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="215dp"
+        android:layout_height="80dp"
+        android:text="11, Jln Sultan Ismail, Kuala Lumpur,
+        50250 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
+        android:textColor="#D9B59D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/contact_us1"
-        tools:layout_editor_absoluteY="464dp" />
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.073" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

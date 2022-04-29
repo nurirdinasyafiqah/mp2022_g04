@@ -144,7 +144,6 @@ public class UpdateProfile extends AppCompatActivity {
                 });
 
                 finish();
-
             }
         });
 
@@ -157,8 +156,6 @@ public class UpdateProfile extends AppCompatActivity {
                 startActivityForResult(Intent.createChooser(intent, "Select image"), PICK_IMAGE);
             }
         });
-
-
     }
 
     @Override
